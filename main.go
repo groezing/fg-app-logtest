@@ -11,6 +11,7 @@ var num_called int = 0
 
 func greet(w http.ResponseWriter, r *http.Request) {
   num_called+=1 
+  fmt.Printf( "fg Hello World called %d ! %s\n", num_called,  time.Now() )
   fmt.Fprintf(w, "fg Hello World called %d ! %s", num_called,  time.Now())
   os.Exit(1)
 }
