@@ -1,6 +1,7 @@
 package main
 
 import (
+	"os"
 	"fmt"
 	"net/http"
 	"time"
@@ -11,7 +12,7 @@ var num_called int = 0
 func greet(w http.ResponseWriter, r *http.Request) {
   num_called+=1 
   fmt.Fprintf(w, "fg Hello World called %d ! %s", num_called,  time.Now())
-  os.exit(1)
+  os.Exit(1)
 }
 
 func main() {
