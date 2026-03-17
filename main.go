@@ -14,7 +14,7 @@ func greet(w http.ResponseWriter, r *http.Request) {
 
   fmt.Printf( "{ctx: kafka-client, Adding consumer}");
   fmt.Printf( "{ctx: kafka-client, Consumer added >> {}}");
-  fmt.Printf( "{ctx: app,\n####                                 ######                                                  \n #     # #       ####   ####  ######    #     # #####   ####  ##### #    # ###### #####   ####  \ }");
+  fmt.Printf( "{ctx: app,\n####                                 ######                                                  \n #     # #       ####   ####  ######    #     # #####   ####  ##### #    # ###### #####   ####  }");
   
   // fmt.Printf( "fg Hello World called %d ! %s\n", num_called,  time.Now() )
   fmt.Fprintf(w, "fg Hello World called %d ! %s", num_called,  time.Now())
