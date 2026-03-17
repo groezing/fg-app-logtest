@@ -12,9 +12,9 @@ var num_called int = 0
 func greet(w http.ResponseWriter, r *http.Request) {
   num_called+=1 
 
-  fmt.Printf( "{ctx: kafka-client, Adding consumer}");
-  fmt.Printf( "{ctx: kafka-client, Consumer added >> {}}");
-  fmt.Printf( "{ctx: app,\n####                                 ######                                                  \n #     # #       ####   ####  ######    #     # #####   ####  ##### #    # ###### #####   ####  }");
+  fmt.Println( "{ctx: kafka-client, Adding consumer}");
+  fmt.Println( "{ctx: kafka-client, Consumer added >> {}}");
+  fmt.Println( "{ctx: app,\n####                                 ######                                                  \n #     # #       ####   ####  ######    #     # #####   ####  ##### #    # ###### #####   ####  }");
   
   // fmt.Printf( "fg Hello World called %d ! %s\n", num_called,  time.Now() )
   fmt.Fprintf(w, "fg Hello World called %d ! %s", num_called,  time.Now())
