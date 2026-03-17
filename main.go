@@ -18,7 +18,7 @@ func greet(w http.ResponseWriter, r *http.Request) {
   
   // fmt.Printf( "fg Hello World called %d ! %s\n", num_called,  time.Now() )
   fmt.Fprintf(w, "fg Hello World called %d ! %s", num_called,  time.Now())
-  os.Exit(1)
+  //os.Exit(1)
 }
 
 func main() {
